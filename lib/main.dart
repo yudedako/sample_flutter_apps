@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'src/home_screen.dart';
 import 'src/random_words.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => RandomWords(),
+        '/': (context) => HomeScreen(),
+        '/random_words': (context) => RandomWords(),
       },
     );
   }
